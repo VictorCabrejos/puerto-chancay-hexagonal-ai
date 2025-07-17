@@ -1,0 +1,4 @@
+ship_id,name,captain,origin_port,containers_count,max_capacity,current_status,eta_chancay
+SHIP-001,Perú Express,Capitán Rodriguez,Shanghai,450,500,atracado,2025-01-17 14:30
+SHIP-002,Asia Dream,Captain Chen,Qingdao,380,400,descargando,2025-01-17 12:00
+SHIP-003,Chancay Pioneer,Captain Kim,Busan,320,450,llegando,2025-01-17 18:45

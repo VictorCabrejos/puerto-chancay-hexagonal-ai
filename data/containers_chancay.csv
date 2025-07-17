@@ -1,0 +1,6 @@
+container_id,ship_name,origin_port,destination_port,cargo_type,weight_kg,status,eta,priority,progress_percent,crane_assigned,temperature_controlled,customs_cleared
+TCLU-2024-001,Perú Express,Shanghai,Chancay,minerales,25000,descargando,2025-01-17 14:30,alta,65,Grua-03,False,True
+TCLU-2024-002,Asia Dream,Qingdao,Chancay,agricola,18000,atracado,2025-01-17 12:00,media,0,,True,False
+TCLU-2024-003,Chancay Pioneer,Busan,Chancay,textiles,12000,llegando,2025-01-17 18:45,baja,0,,False,False
+TCLU-2024-004,Lima Trader,Ningbo,Chancay,quimicos,22000,descargando,2025-01-17 09:15,critica,90,Grua-01,True,True
+TCLU-2024-005,Pacific Bridge,Yokohama,Chancay,manufactura,16500,completado,2025-01-17 06:00,media,100,,False,True

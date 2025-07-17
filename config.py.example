@@ -1,0 +1,160 @@
+# 🚢 Puerto de Chancay - Configuración del Sistema
+# Copia este archivo como config.py y personaliza según tus necesidades
+
+# ============================================================================
+# CONFIGURACIÓN PRINCIPAL
+# ============================================================================
+
+# OpenAI API Configuration
+# Obtén tu API key en: https://platform.openai.com/api-keys
+OPENAI_API_KEY = "tu-openai-api-key-aqui"
+
+# Puerto del sistema
+PORT = 5000
+
+# Modo debug (True para desarrollo, False para producción)
+DEBUG = True
+
+# ============================================================================
+# CONFIGURACIÓN DEL PUERTO DE CHANCAY
+# ============================================================================
+
+# Información del puerto
+PUERTO_CONFIG = {
+    "nombre": "Puerto de Chancay",
+    "pais": "Perú",
+    "capacidad_teu_anual": 1500000,  # 1.5 millones TEU
+    "profundidad_metros": 17.8,
+    "numero_gruas": 12,
+    "posiciones_atraque": 4,
+    "ubicacion": {
+        "latitud": -11.2333,
+        "longitud": -77.6167,
+        "distancia_lima_km": 78
+    }
+}
+
+# ============================================================================
+# CONFIGURACIÓN DE IA (OpenAI GPT-4o mini)
+# ============================================================================
+
+# Modelo de OpenAI a utilizar
+OPENAI_MODEL = "gpt-4o-mini"
+
+# Temperatura para respuestas de IA (0.0 = determinístico, 1.0 = creativo)
+OPENAI_TEMPERATURE = 0.7
+
+# Máximo de tokens en respuestas
+OPENAI_MAX_TOKENS = 500
+
+# ============================================================================
+# CONFIGURACIÓN DE DATOS
+# ============================================================================
+
+# Ruta al archivo CSV de contenedores
+CSV_FILE_PATH = "data/containers_chancay.csv"
+
+# Intervalo de actualización de datos (segundos)
+DATA_REFRESH_INTERVAL = 30
+
+# ============================================================================
+# CONFIGURACIÓN DE MÉTRICAS
+# ============================================================================
+
+# KPIs objetivo del puerto
+TARGET_METRICS = {
+    "efficiency_percentage": 92,          # 92% eficiencia objetivo
+    "containers_per_hour": 45,            # 45 contenedores/hora
+    "average_dwell_time_hours": 8,        # 8 horas tiempo promedio
+    "crane_utilization_percentage": 85    # 85% utilización de grúas
+}
+
+# ============================================================================
+# CONFIGURACIÓN DE ALERTAS
+# ============================================================================
+
+# Umbrales para alertas automáticas
+ALERT_THRESHOLDS = {
+    "low_efficiency": 80,           # Alerta si eficiencia < 80%
+    "high_congestion": 95,          # Alerta si ocupación > 95%
+    "crane_failure": 70,            # Alerta si disponibilidad grúas < 70%
+    "customs_delay": 24             # Alerta si demora aduanera > 24h
+}
+
+# ============================================================================
+# CONFIGURACIÓN DE SIMULACIÓN
+# ============================================================================
+
+# Parámetros para simular operaciones portuarias realistas
+SIMULATION_CONFIG = {
+    "ships_arriving_per_day": 8,      # Barcos llegando por día
+    "container_types": [              # Tipos de contenedores
+        "general", "refrigerado", "peligroso", "perecedero"
+    ],
+    "origins": [                      # Países de origen simulados
+        "China", "Korea", "Japan", "Singapore", "Taiwan"
+    ],
+    "container_sizes": [20, 40],      # Tamaños TEU
+    "processing_time_hours": {        # Tiempos de procesamiento
+        "general": 2,
+        "refrigerado": 3,
+        "peligroso": 4,
+        "perecedero": 1.5
+    }
+}
+
+# ============================================================================
+# CONFIGURACIÓN DE SEGURIDAD
+# ============================================================================
+
+# Headers de seguridad para la aplicación web
+SECURITY_HEADERS = {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "X-XSS-Protection": "1; mode=block"
+}
+
+# CORS (Cross-Origin Resource Sharing) - para desarrollo
+CORS_ORIGINS = [
+    "http://localhost:5000",
+    "http://127.0.0.1:5000"
+]
+
+# ============================================================================
+# CONFIGURACIÓN DE LOGGING
+# ============================================================================
+
+# Nivel de logging
+LOG_LEVEL = "INFO"  # DEBUG, INFO, WARNING, ERROR
+
+# Formato de logs
+LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# ============================================================================
+# NOTAS DE CONFIGURACIÓN
+# ============================================================================
+
+"""
+INSTRUCCIONES DE USO:
+
+1. Copia este archivo como 'config.py'
+2. Reemplaza 'tu-openai-api-key-aqui' con tu API key real
+3. Ajusta los parámetros según tus necesidades
+4. Para producción, usa variables de entorno en lugar de hardcodear secrets
+
+VARIABLES DE ENTORNO SOPORTADAS:
+- OPENAI_API_KEY: Tu API key de OpenAI
+- PORT: Puerto para el servidor (default: 5000)
+- DEBUG: True/False para modo debug
+- ENVIRONMENT: development/production
+
+OBTENER API KEY:
+- Visita: https://platform.openai.com/api-keys
+- Crea una nueva API key
+- Asegúrate de tener créditos disponibles
+
+SEGURIDAD:
+- NUNCA comitas config.py con API keys reales
+- Usa .env para secrets en desarrollo
+- Variables de entorno para producción
+"""
