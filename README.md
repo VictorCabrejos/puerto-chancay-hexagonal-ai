@@ -1,18 +1,19 @@
+<div align="center">
+
 # 🚢 Puerto de Chancay - Sistema de Gestión Inteligente
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20Victor-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victorcabrejos/)
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-3.11+-blue.svg" alt="Python Version">
-  <img src="https://img.shields.io/badge/FastAPI-Latest-00a393.svg" alt="FastAPI">
-  <img src="https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991.svg" alt="OpenAI">
-  <img src="https://img.shields.io/badge/Architecture-Hexagonal-ff6b6b.svg" alt="Hexagonal Architecture">
-  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
-</div>
+<img src="https://img.shields.io/badge/Python-3.11+-blue.svg" alt="Python Version">
+<img src="https://img.shields.io/badge/FastAPI-Latest-00a393.svg" alt="FastAPI">
+<img src="https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991.svg" alt="OpenAI">
+<img src="https://img.shields.io/badge/Architecture-Hexagonal-ff6b6b.svg" alt="Hexagonal Architecture">
+<img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
 
-<div align="center">
-  <h3>🤖 Sistema portuario inteligente con Arquitectura Hexagonal + IA</h3>
-  <p><em>Demostrando Clean Architecture, Domain-Driven Design y integración con OpenAI GPT-4o mini</em></p>
+## *Sistema portuario inteligente con Arquitectura Hexagonal + IA*
+**Demostrando Clean Architecture, Domain-Driven Design y integración con OpenAI GPT-4o mini**
+
+</div>
 </div>
 
 ---
