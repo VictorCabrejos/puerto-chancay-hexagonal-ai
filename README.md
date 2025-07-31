@@ -1,5 +1,7 @@
 # 🚢 Puerto de Chancay - Sistema de Gestión Inteligente
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20Victor-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victorcabrejos/)
+
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.11+-blue.svg" alt="Python Version">
   <img src="https://img.shields.io/badge/FastAPI-Latest-00a393.svg" alt="FastAPI">
